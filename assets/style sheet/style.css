@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --background: rgb(5, 69, 83);
+    --hero-background: rgb(54, 83, 123);
+    --gray-background: rgb(241, 242, 243);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.custom-col-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+/* section 2 general-text editing */
+.platforms-caption h3 {
+    color: #222;
+    font-size: 18px
+}
+
+.section-title h3 {
+    padding: 40px 0 20px 0;
+    font-size: 28px;
+    font-weight: 490;
+    text-align: center;
+    color: var(--black);
+}
+
+/* transition */
+.transition {
+    overflow: hidden;
+}
+
+.transition-parent:hover .transition img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+/* ================================================================== */
+
+/* navbar */
+.nav-item a {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-alignments,
+.logo-and-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-form {
+    float: end;
+}
+
+/* <!-- section - 1 hero-section --> */
+/* top-line */
+.hero-section {
+    background-color: var(--hero-background);
+    overflow: hidden;
+}
+
+.hero-section:hover .hero-image {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.top-line {
+    background-color: var(--background);
+    padding: 16px 0;
+}
+
+.hero-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.hero-image img {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.hero-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.hero-caption img {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.hero-caption p {
+    color: var(--white);
+}
+
+.hero-caption a {
+    padding: 12px 70px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* <!-- section - 2 Releasing soon --> */
+.platforms-information {
+    background-color: var(--gray-background);
+}
+
+.platforms-top p {
+    font-size: 14px;
+}
+
+.platforms-top a {
+    text-decoration: underline;
+}
+
+.platforms-list {
+    padding: 40px 80px;
+}
+
+.platforms-caption a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.platforms-caption h3 {
+    font-weight: 500;
+}
+
+.list-image a img {
+    width: 100%;
+}
+
+.list-caption {
+    padding: 30px;
+    text-align: center;
+    height: 260px;
+}
+
+.platforms-caption p {
+    padding: 6px 0 20px 0;
+}
+
+/* <!-- section - 3 Explore --> */
+.explore {
+    background-color: var(--background);
+    padding: 20px 80px 40px 80px;
+}
+
+.explore-image img {
+    width: 100%;
+}
+
+.explore-caption {
+    padding: 30px;
+    text-align: center;
+    color: var(--white);
+}
+
+.explore-caption p {
+    margin-bottom: 36px;
+}
+
+.explore-caption a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--white);
+}
+
+/* <!-- section - 4 upComming --> */
+.Comming-soon {
+    background-color: var(--gray-background);
+}
+
+.carousel-control-prev {
+    width: 7%;
+}
+
+
+/* <!-- section - 5 VacationS --> */
+.vacation {
+    background-color: var(--gray-background);
+    padding: 20px 80px 60px 80px;
+}
+
+.vacation-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.for-height {
+    height: 430px;
+}
+
+.vacation-caption {
+    padding-bottom: 25px;
+}
+
+.vacation-caption h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.vacation-caption p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.vacation-caption>a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* slides */
+.carousel-image img {
+    width: 100%;
+}
+
+.carousel-alignments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images-caption h3 {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 28px;
+    margin: 15px 0px 7px 0;
+}
+
+.images-caption p {
+    font-size: 16px;
+}
+
+.images-caption {
+    height: 12rem;
+}
+
+
+
+/* section - 6 Disney BUndle */
+
+.bundle-background {
+    background-image: url('../Images/disney-bundle.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease;
+}
+
+.bundle-background:hover {
+    background-size: 103%;
+}
+
+.bundle-caption {
+    padding: 70px 0px;
+}
+
+.bundle-caption img {
+    width: 363px;
+}
+
+.bundle-caption p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+.bundle-caption p span {
+    font-size: 12px;
+    margin: 0;
+}
+
+.bundle-caption button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 40px;
+    margin-top: 16px;
+}
+
+/* section - 8 Dream cards */
+.center-caption p {
+    padding: 20px 174px;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.center-caption p a {
+    text-decoration: underline;
+}
+
+
+.Dream-cards {
+    background-color: rgb(241, 242, 244);
+}
+
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 0;
+}
+
+.cards-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards-information {
+    color: rgb(15, 47, 94);
+}
+
+.cards-information h2 {
+    font-size: 24px;
+}
+
+.cards-information h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.cards-information p {
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.cards-information h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards-information h5 {
+    font-size: 16px;
+}
+
+.cards-information h6 {
+    font-size: 10px;
+    line-height: 22px;
+    padding-top: 5px;
+}
+
+.cards-information a {
+    color: rgb(15, 47, 94);
+}
+
+/* section - 8 Dream cards */
+footer {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0 10px 0;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-links ul li {
+    padding: 0 12px 0 8px;
+}
+
+.footer-links-2 ul {
+    font-weight: 500;
+}
+
+footer p {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+/* ========================================================================= */
+/* media quary */
+@media only screen and (max-device-width: 992px) {
+
+    .row {
+        --bs-gutter-x: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .logo-and-links {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    * {
+        padding: 0;
+    }
+
+    /* section - 1 hero-section */
+    .hero-image img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    /* section - 2 Releasing soon */
+    .platforms-list {
+        padding: 16px 23px;
+    }
+
+    .list-caption {
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    /* section - 3 Explore */
+    .explore {
+        background-color: var(--background);
+        padding: 0px 23px 16px 23px;
+    }
+
+    /* section - 4 upComming */
+    .slides {
+        padding: 0px 23px 16px 23px;
+    }
+
+    .carousel-img-caption {
+        height: 21rem;
+    }
+
+    .bundle-caption {
+        padding: 0;
+    }
+
+    .next-prev-btn {
+        display: none;
+    }
+
+    /* section - 5 VacationS */
+    .vacation {
+        background-color: var(--gray-background);
+        padding: 16px 23px 16px 23px;
+    }
+
+    .for-height {
+        height: auto;
+    }
+
+    /* section - 6 Disney BUndle */
+    .bundle-caption {
+        padding: 46px 0;
+    }
+
+    .bundle-caption img {
+        width: 50%;
+    }
+
+    /* < !-- section - 7 Center caption --> */
+    .center-caption p {
+        padding: 0;
+    }
+
+    /* section - 8 Dream cards */
+    .alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0;
+    }
+
+    /* Footer */
+    .footer-links ul {
+        padding: 15px 0 0px 0
+    }
+
+    .footer-links ul li {
+        padding: 0px 20px 0 8px;
+    }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+
+
+    /* <!-- section - 1 hero-section --> */
+    .hero-image img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    /* <!-- section - 2 Releasing soon --> */
+    .list-caption {
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+
+    /* <!-- section - 5 VacationS --> */
+    .vacation {
+        background-color: var(--gray-background);
+        padding: 20px 30px 60px 30px;
+    }
+
+    .for-height,
+    .carousel-img-caption {
+        height: auto;
+    }
+
+    /* <!-- section - 4 upComming --> */
+    .carousel-control-next {
+        margin-left: 20rem;
+        width: 50px;
+    }
+
+
+    /* <!-- section - 6 Disney BUndle --> */
+    .bundle-caption {
+        padding: 70px 15px;
+    }
+
+    /* <!-- section - 7 Center caption  --> */
+    .center-caption p {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+
+    /* section - 1 hero-section */
+    .hero-image img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+    }
+
+    /* section - 2 Releasing soon */
+    .list-caption {
+        height: 235px;
+    }
+
+    .for-height {
+        height: auto;
+    }
+
+    .center-caption p {
+        padding: 20px 7px;
+
+    }
+
+    /* <!-- section - 4 upComming --> */
+    .carousel-control-next {
+        margin-left: 20rem;
+        width: 50px;
+    }
+
+    .carousel-img-caption {
+        height: 25rem;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1400px) {
+    .list-caption {
+        height: 340px;
+    }
+}
+
+@media only screen and (max-device-width: 992px) {
+
+    .navbar-alignments,
+    .logo-and-links {
+        display: block;
+    }
+
+    .bundle-background {
+        background-size: auto;
+    }
+
+    .bundle-background:hover {
+        background-size: auto;
+    }
+
+
+
+}
+
+@media only screen and (max-device-width: 425px) {
+    .col-3 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .images-caption {
+        height: 6rem;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        display: block;
+        padding: 0 !important;
+        text-align: start;
+        padding-left: 30px;
+    }
+
+    .footer-links ul li {
+        padding: 12px;
+    }
+
+    .footer-logo {
+        text-align: start !important;
+        padding: 12px;
+    }
+}
