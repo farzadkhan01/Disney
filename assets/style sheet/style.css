@@ -190,7 +190,43 @@ a {
 }
 
 .carousel-control-prev {
-    width: 7%;
+    width: 4%;
+    height: 2rem;
+    margin-left: 12px;
+    margin-top: 7rem;
+    opacity: 55;
+}
+
+.carousel-control-prev::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 55;
+    z-index: -1;
+}
+
+.carousel-control-next {
+    width: 4%;
+    height: 2rem;
+    margin-right: 5px;
+    margin-top: 7rem;
+    opacity: 55;
+    color: black;
+}
+
+
+.carousel-control-next::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 55;
+    z-index: -1;
 }
 
 
@@ -457,8 +493,13 @@ footer p {
         padding: 0;
     }
 
-    .next-prev-btn {
-        display: none;
+    .carousel-control-next {
+        margin-left: 20rem;
+        width: 50px;
+    }
+
+    .carousel-control-prev {
+        margin-left: 20px;
     }
 
     /* section - 5 VacationS */
@@ -578,58 +619,68 @@ footer p {
         height: 25rem;
     }
 
-
-}
-
-@media only screen and (min-device-width: 992px) and (max-device-width: 1400px) {
-    .list-caption {
-        height: 340px;
-    }
-}
-
-@media only screen and (max-device-width: 992px) {
-
-    .navbar-alignments,
-    .logo-and-links {
-        display: block;
+    .carousel-control-next::before,
+    .carousel-control-prev::before {
+        width: 42px;
+        height: 42px;
     }
 
-    .bundle-background {
-        background-size: auto;
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1400px) {
+        .list-caption {
+            height: 340px;
+        }
     }
 
-    .bundle-background:hover {
-        background-size: auto;
+    @media only screen and (max-device-width: 992px) {
+
+        .navbar-alignments,
+        .logo-and-links {
+            display: block;
+        }
+
+        .bundle-background {
+            background-size: auto;
+        }
+
+        .bundle-background:hover {
+            background-size: auto;
+        }
+
+
+
     }
 
+    @media only screen and (max-device-width: 425px) {
+        .col-3 {
+            flex: 0 0 auto;
+            width: 80%;
+        }
 
+        .images-caption {
+            height: 6rem;
+        }
 
-}
+        .footer-links ul {
+            list-style: none;
+            display: block;
+            padding: 0 !important;
+            text-align: start;
+            padding-left: 30px;
+        }
 
-@media only screen and (max-device-width: 425px) {
-    .col-3 {
-        flex: 0 0 auto;
-        width: 80%;
+        .footer-links ul li {
+            padding: 12px;
+        }
+
+        .footer-logo {
+            text-align: start !important;
+            padding: 12px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next,
+        .carousel-control-prev::before,
+        .carousel-control-next::before {
+            display: none;
+        }
     }
-
-    .images-caption {
-        height: 6rem;
-    }
-
-    .footer-links ul {
-        list-style: none;
-        display: block;
-        padding: 0 !important;
-        text-align: start;
-        padding-left: 30px;
-    }
-
-    .footer-links ul li {
-        padding: 12px;
-    }
-
-    .footer-logo {
-        text-align: start !important;
-        padding: 12px;
-    }
-}
