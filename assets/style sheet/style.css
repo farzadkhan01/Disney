@@ -42,7 +42,7 @@ a {
 }
 
 .transition-parent:hover .transition img {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.3s;
 }
 
@@ -66,6 +66,22 @@ a {
     float: end;
 }
 
+.nav-item p {
+    margin: 0;
+}
+
+.nav-item p:hover {
+    color: #0077DA !important;
+    transition: all 0.3s;
+}
+
+.input-group-text {
+    color: #0077DA;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 /* <!-- section - 1 hero-section --> */
 /* top-line */
 .hero-section {
@@ -74,7 +90,7 @@ a {
 }
 
 .hero-section:hover .hero-image {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.3s;
 }
 
@@ -93,6 +109,7 @@ a {
 
 .hero-image img {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+    margin-left: 1px;
 }
 
 .hero-caption {
@@ -116,6 +133,14 @@ a {
     padding: 12px 70px;
     color: var(--black);
     font-weight: 600;
+    background-color: #ffffff;
+    border: white !important;
+}
+
+.hero-caption a:hover {
+    color: white;
+    background-color: #ffffff00;
+    border: 2px solid #ffffff !important;
 }
 
 /* <!-- section - 2 Releasing soon --> */
@@ -158,6 +183,11 @@ a {
     padding: 6px 0 20px 0;
 }
 
+.platforms-caption a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
+}
+
 /* <!-- section - 3 Explore --> */
 .explore {
     background-color: var(--background);
@@ -182,6 +212,11 @@ a {
     font-weight: 600;
     text-decoration: underline;
     color: var(--white);
+}
+
+.explore-caption a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
 }
 
 /* <!-- section - 4 upComming --> */
@@ -229,6 +264,11 @@ a {
     z-index: -1;
 }
 
+.images-caption a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
+}
+
 
 /* <!-- section - 5 VacationS --> */
 .vacation {
@@ -266,6 +306,11 @@ a {
     text-decoration: underline;
 }
 
+.vacation-caption a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
+}
+
 /* slides */
 .carousel-image img {
     width: 100%;
@@ -291,8 +336,6 @@ a {
 .images-caption {
     height: 12rem;
 }
-
-
 
 /* section - 6 Disney BUndle */
 
@@ -334,6 +377,18 @@ a {
     font-weight: 700;
     padding: 12px 40px;
     margin-top: 16px;
+    background-color: #0318e4;
+    color: white;
+}
+.bundle-caption button:hover{
+    color: #0319e49a;
+    transition: all 0.3s;
+}
+/* section - 7 Center caption  */
+
+.center-caption a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
 }
 
 /* section - 8 Dream cards */
@@ -403,7 +458,13 @@ a {
     color: rgb(15, 47, 94);
 }
 
-/* section - 8 Dream cards */
+
+.cards-information a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
+}
+
+/* section - 9 Dream cards */
 footer {
     padding: 32px 0;
     text-align: center;
@@ -430,6 +491,11 @@ footer {
 footer p {
     font-size: 12px;
     padding-top: 20px;
+}
+
+.footer-links a:hover {
+    color: #0077DA;
+    transition: all 0.3s;
 }
 
 /* ========================================================================= */
@@ -630,57 +696,55 @@ footer p {
             height: 340px;
         }
     }
+}
 
-    @media only screen and (max-device-width: 992px) {
+@media only screen and (max-device-width: 992px) {
 
-        .navbar-alignments,
-        .logo-and-links {
-            display: block;
-        }
-
-        .bundle-background {
-            background-size: auto;
-        }
-
-        .bundle-background:hover {
-            background-size: auto;
-        }
-
-
-
+    .navbar-alignments,
+    .logo-and-links {
+        display: block;
     }
 
-    @media only screen and (max-device-width: 425px) {
-        .col-3 {
-            flex: 0 0 auto;
-            width: 80%;
-        }
-
-        .images-caption {
-            height: 6rem;
-        }
-
-        .footer-links ul {
-            list-style: none;
-            display: block;
-            padding: 0 !important;
-            text-align: start;
-            padding-left: 30px;
-        }
-
-        .footer-links ul li {
-            padding: 12px;
-        }
-
-        .footer-logo {
-            text-align: start !important;
-            padding: 12px;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next,
-        .carousel-control-prev::before,
-        .carousel-control-next::before {
-            display: none;
-        }
+    .bundle-background {
+        background-size: auto;
     }
+
+    .bundle-background:hover {
+        background-size: auto;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+    .col-3 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .images-caption {
+        height: 6rem;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        display: block;
+        padding: 0 !important;
+        text-align: start;
+        padding-left: 30px;
+    }
+
+    .footer-links ul li {
+        padding: 12px;
+    }
+
+    .footer-logo {
+        text-align: start !important;
+        padding: 12px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-control-prev::before,
+    .carousel-control-next::before {
+        display: none;
+    }
+}
