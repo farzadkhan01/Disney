@@ -40,10 +40,13 @@ a {
 .transition {
     overflow: hidden;
 }
+.transition img {
+    transition: all 0.3s;
+
+}
 
 .transition-parent:hover .transition img {
     transform: scale(1.03);
-    transition: all 0.3s;
 }
 
 /* ================================================================== */
@@ -88,10 +91,12 @@ a {
     background-color: var(--hero-background);
     overflow: hidden;
 }
+.hero-image {
 
+    transition: all 0.3s;
+}
 .hero-section:hover .hero-image {
     transform: scale(1.03);
-    transition: all 0.3s;
 }
 
 .top-line {
@@ -134,7 +139,7 @@ a {
     color: var(--black);
     font-weight: 600;
     background-color: #ffffff;
-    border: white !important;
+    border: 2px solid white !important;
 }
 
 .hero-caption a:hover {
